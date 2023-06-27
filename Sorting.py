@@ -1,6 +1,5 @@
 import time
 
-
 def bubble_sort(arr):
     n = len(arr)
     start_time = time.time()
@@ -36,21 +35,21 @@ def insertion_sort(arr):
 
 
 def print_iteration_results(iterations):
-    print("First 5 iterations: ", iterations[:5])
-    print("Last 5 iterations: ", iterations[-5:])
+    print("5 iterasi pertama: ", iterations[:5])
+    print("5 iterasi terakhir: ", iterations[-5:])
 
 
 def print_execution_time(execution_time):
-    print("Execution Time: %.6f seconds" % execution_time)
+    print("Waktu eksekusi: %.6f detik" % execution_time)
 
 
 def print_before_after(before, after):
-    print("Before Sorting: ", before)
-    print("After Sorting: ", after)
+    print("Sebelum Sorting: ", before)
+    print("Setelah Sorting: ", after)
 
 
 def analyze_algorithm():
-    print("Analysis Algorithm:")
+    print("Analisa Algoritma:")
     print("1. Worst Case: O(n^2)")
     print("   - Terjadi ketika elemen-elemen dalam list terurut secara terbalik.")
     print("2. Best Case: O(n)")
@@ -65,11 +64,11 @@ def main():
            17, 50, 2, 36, 53, 79, 54, 19, 88, 1, 32, 31, 15, 6, 3, 1, 40, 22, 43, 18, 1, 77, 9, 59,
            40, 7, 41, 81]
 
-    print("Welcome to Sorting Program!")
+    print("Selamat datang di Sorting Program!")
     print("1. Bubble Sort")
     print("2. Insertion Sort")
-    print("3. Analysis Algorithm")
-    choice = input("Enter your choice (1-3): ")
+    print("3. Analisa Algoritma")
+    choice = input("Masukkan pilihan anda (1-3): ")
     print()
 
     if choice == '1':
@@ -85,7 +84,7 @@ def main():
     elif choice == '3':
         analyze_algorithm()
     else:
-        print("Invalid choice. Please try again.")
+        print("Pilihan tidak sesuai, silahkan coba lagi.")
 
 
 if __name__ == '__main__':

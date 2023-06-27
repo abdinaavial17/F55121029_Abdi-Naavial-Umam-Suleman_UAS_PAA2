@@ -85,7 +85,7 @@ def print_shortest_path(path, distance):
 
 
 def analyze_algorithm():
-    print("Analysis Algorithm:")
+    print("Analysia Algoritma:")
     print("1. Worst Case:")
     print("   - TSP: O(n!)")
     print("   - Dijkstra: O((V + E)logV)")
@@ -98,21 +98,21 @@ def analyze_algorithm():
 
 
 def main():
-    print("Welcome to Shortest Path Program!")
+    print("Selamat datang di Shortest Path Program!")
     print("1. TSP (Traveling Salesman Problem)")
     print("2. Dijkstra")
-    print("3. Analysis Algorithm")
-    choice = input("Enter your choice (1-3): ")
+    print("3. Analisa Algoritma")
+    choice = input("Masukkan pilihan anda (1-3): ")
     print()
 
     if choice == '1':
-        start_vertex = input("Enter the start vertex: ")
+        start_vertex = input("Masukkan vertex awal : ")
         path, distance, execution_time = tsp(graph, start_vertex)
         print_iteration_results(path)
         print_execution_time(execution_time)
         print_shortest_path(path, distance)
     elif choice == '2':
-        start_vertex = input("Enter the start vertex: ")
+        start_vertex = input("Masukkan vertex awal : ")
         shortest_path, distances, execution_time = dijkstra(graph, start_vertex)
         print_iteration_results(shortest_path)
         print_execution_time(execution_time)
@@ -124,7 +124,7 @@ def main():
     elif choice == '3':
         analyze_algorithm()
     else:
-        print("Invalid choice. Please try again.")
+        print("Pilihan tidak sesuai, silahkan coba lagi.")
 
 
 if __name__ == '__main__':
